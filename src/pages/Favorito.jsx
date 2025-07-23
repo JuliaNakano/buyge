@@ -7,35 +7,35 @@ const Favorito = () => {
   const [products, setProducts] = useState([
     {
       id: 1,
-      category: 'One Piece',
-      name: 'Camiseta Luffy Gear 5',
+      category: 'Boneco Up Altas Aventuras',
+      name: 'Boneco Up Altas Aventuras',
       seller: 'AnimeStore',
       price: 'R$ 79,90',
       img: '/funkoPop.jpg'
     },
     {
       id: 2,
-      category: 'Solo Leveling',
-      name: 'Poster Jin-Woo',
+      category: 'Capa Solo Leveling',
+      name: 'Capa Solo Leveling',
       seller: 'PostersInc',
       price: 'R$ 29,90',
-      img: '/images/poster-jinwoo.jpg'
+      img: '/capaSL.jpeg'
     },
     {
       id: 3,
       category: 'Dandadan',
-      name: 'Action Figure Momo',
+      name: 'Camisa Dandadan',
       seller: 'Figurines',
       price: 'R$ 149,90',
-      img: '/images/figure-momo.jpg'
+      img: '/camisaDDD.jpeg'
     },
     {
       id: 4,
       category: 'To be hero x',
-      name: 'Caneca Exclusiva',
+      name: '/Cosplay To be hero x',
       seller: 'MugShop',
       price: 'R$ 39,90',
-      img: '/images/caneca-hero.jpg'
+      img: '/cosplayTBX.jpeg'
     },
   ]);
 

@@ -11,14 +11,14 @@ const CartPage = () => {
       name: 'Caneca Personalizada',
       price: 50.99,
       quantity: 1,
-      image: ''
+      image: '/canecanaruto.jpeg'
     },
     {
       id: 2,
-      name: 'Cosplay Naruto',
+      name: 'Capa Solo Leveling',
       price: 750.00,
       quantity: 2,
-      image: ''
+      image: '/capaSL.jpeg'
     }
 
   ]);
