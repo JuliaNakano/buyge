@@ -1,8 +1,12 @@
 import { FaUser } from "react-icons/fa";
 import RodaPe from "../components/RodaPe";
 import Navbar from "../components/Navbar";
+import { useNavigate } from 'react-router-dom'; 
+
 
 export default function PerfilUsuario() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Navbar />
@@ -14,14 +18,14 @@ export default function PerfilUsuario() {
             <div className="w-24 h-24 border-4 border-black rounded-full flex items-center justify-center text-5xl mb-3">
               <FaUser />
             </div>
-            <h2 className="mb-7  font-bold text-2xl">João Silva</h2>
-            <button className="bg-[#772583] text-white py-2 px-4 m-1 rounded shadow-md w-4/5 hover:bg-[#AD7CB5]">
+            <h2 className="mb-7  font-bold text-2xl">Batatinha</h2>
+            <button onClick={() => navigate('/favoritos')}  className="bg-[#772583] text-white py-2 px-4 m-1 rounded shadow-md w-4/5 hover:bg-[#AD7CB5] ">
               SUA LISTA DE DESEJOS
             </button>
             <button className="bg-[#772583] text-white py-2 px-4 m-1 rounded shadow-md w-4/5 hover:bg-[#AD7CB5]">
               SEUS PEDIDOS
             </button>
-            <button className="bg- text-white py-2 px-4 m-1 rounded shadow-md w-4/5 hover:bg-[#AD7CB5]">
+            <button className="bg-[#772583] text-white py-2 px-4 m-1 rounded shadow-md w-4/5 hover:bg-[#AD7CB5]">
               ALTERAR DADOS PESSOAIS
             </button>
           </section>
@@ -32,11 +36,11 @@ export default function PerfilUsuario() {
             <div className="border border-gray-300 rounded-md divide-y divide-gray-300 bg-white">
               <div className="flex justify-between p-3">
                 <span className="font-bold text-gray-600">Nome Completo:</span>
-                <span className="text-gray-800">João Silva</span>
+                <span className="text-gray-800">Batata Palha da Silva Sauro</span>
               </div>
               <div className="flex justify-between p-3">
                 <span className="font-bold text-gray-600 text">E-mail:</span>
-                <span className="text-gray-800">joao.silva@email.com</span>
+                <span className="text-gray-800">batata.silva@email.com</span>
               </div>
               <div className="flex justify-between p-3">
                 <span className="font-bold text-gray-600">Telefone:</span>

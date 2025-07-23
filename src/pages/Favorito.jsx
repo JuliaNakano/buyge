@@ -2,8 +2,10 @@ import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 import RodaPe from '../components/RodaPe';
+import { useNavigate } from 'react-router-dom'; 
 
 const Favorito = () => {
+  const navigate = useNavigate();
   const [products, setProducts] = useState([
     {
       id: 1,
@@ -47,12 +49,13 @@ const Favorito = () => {
     <div className="flex flex-col min-h-screen">
        <Navbar />
 
-      <div className="flex flex-1">
         {/* Sidebar */}
+       <div className="flex flex-1">
         <aside className="w-64 bg-[#AD7CB5] p-5 text-white">
           <div className="mb-6 text-xl font-semibold">Olá, Batata!</div>
           <ul className="space-y-3">
-            <li className="flex items-center hover:bg-[#772583] p-2 rounded cursor-pointer">
+            <li className="flex items-center hover:bg-[#772583] p-2 rounded cursor-pointer"
+            onClick={() => navigate('/usuario')} >
               <span className="mr-2">👤</span> Meus Dados
             </li>
             <li className="flex items-center hover:bg-[#772583] p-2 rounded cursor-pointer">
@@ -67,12 +70,15 @@ const Favorito = () => {
             <li className="flex items-center hover:bg-[#772583] p-2 rounded cursor-pointer">
               <span className="mr-2">🔒</span> Segurança
             </li>
-            <li className="flex items-center hover:bg-[#772583] p-2 rounded cursor-pointer">
+            <li
+              className="flex items-center hover:bg-[#772583] p-2 rounded cursor-pointer"
+              onClick={() => navigate('/myloja')} // REDIRECIONA PARA /minha-loja
+            >
               <span className="mr-2">🏬</span> Minha Loja Virtual
             </li>
           </ul>
         </aside>
-
+       
         {/* Conteúdo principal */}
         <main className="flex-1 p-6 bg-purple-50 flex flex-col">
           <h1 className="text-2xl font-bold mb-6 text-[#772583]">Meus Favoritos</h1>
