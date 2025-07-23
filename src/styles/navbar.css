@@ -1,0 +1,32 @@
+/* Estilos específicos da Navbar */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7e22ce; /* Roxo */
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-container .logo {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-container .search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.user-actions i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.user-actions i:hover {
+  color: #d8b4fe; /* Lilás claro no hover */
+}
