@@ -6,18 +6,18 @@ import RodaPe from '../components/RodaPe';
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carouselImages = [
-    'https://via.placeholder.com/1200x400/772583/ffffff?text=Promoção+1',
-    'https://via.placeholder.com/1200x400/9d3dac/ffffff?text=Promoção+2',
-    'https://via.placeholder.com/1200x400/772583/ffffff?text=Promoção+3'
+    'carrosselNaruto.jpeg',
+    'carrosselSL.jpeg',
+    'carrosselOP.jpeg',
   ];
 
   const products = [
-    { id: 1, name: 'Produto 01', price: 'R$ 99,90', image: '/funkoPop.jpg' },
-    { id: 2, name: 'Produto 02', price: 'R$ 99,90', image: 'https://via.placeholder.com/200' },
-    { id: 3, name: 'Produto 03', price: 'R$ 99,90', image: 'https://via.placeholder.com/200' },
-    { id: 4, name: 'Produto 04', price: 'R$ 99,90', image: 'https://via.placeholder.com/200' },
-    { id: 5, name: 'Produto 05', price: 'R$ 99,90', image: 'https://via.placeholder.com/200' },
-    { id: 6, name: 'Produto 06', price: 'R$ 99,90', image: 'https://via.placeholder.com/200' }
+    { id: 1, name: 'Boneco Up Altas Aventuras', price: 'R$ 99,90', image: '/funkoPop.jpg' },
+    { id: 2, name: 'Camisa Solo Leveling', price: 'R$ 99,90', image: '/camisaSL.jpeg' },
+    { id: 3, name: 'Capa Naruto', price: 'R$ 99,90', image: '/capanaruto.jpeg' },
+    { id: 4, name: 'Cosplay To be hero x', price: 'R$ 99,90', image: '/cosplayTBX.jpeg' },
+    { id: 5, name: 'Caneca Dandadan', price: 'R$ 99,90', image: '' },
+    { id: 6, name: 'Caneca Solo Leveling', price: 'R$ 99,90', image: '/canecaSL.jpeg' }
   ];
 
   const [ofertasIndex, setOfertasIndex] = useState(0);
